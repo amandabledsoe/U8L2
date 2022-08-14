@@ -1,0 +1,19 @@
+<h1>WELCOME TO CHIRPUS PIZZA!</h1>
+<p>View Our Menu:</p>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td><b>ITEM NAME</b></td>
+      <td><b>CATEGORY</b></td>
+      <td><b>PRICE</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let mi of ourMenuItems">
+      <td>{{mi.ItemName}}</td>
+      <td>{{mi.Category | uppercase}}</td>
+      <td>{{mi.Price | currency}}</td>
+    </tr>
+  </tbody>
+</table>
